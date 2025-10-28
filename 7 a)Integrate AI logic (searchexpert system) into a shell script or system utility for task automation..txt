@@ -35,4 +35,5 @@ fi
 # Healthy system condition
 if (( $(echo $cpu_load = 2.0  bc -l) )) && [ $mem_free -ge 500 ] && [ $disk_percent -le 80 ]; then
   echo System Status ✅ Healthy. No action needed.
+
 fi
